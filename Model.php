@@ -5,7 +5,7 @@
  * Time: 8:43 AM
  */
 
-namespace app\core;
+namespace bk\phpmvcfw;
 
 
 

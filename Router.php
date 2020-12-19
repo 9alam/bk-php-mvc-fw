@@ -5,19 +5,19 @@
  * Time: 10:01 AM
  */
 
-namespace app\core;
-use app\core\Application;
-use app\core\Request;
-use app\core\Response;
+namespace bk\phpmvcfw;
+use bk\phpmvcfw\Application;
+use bk\phpmvcfw\Request;
+use bk\phpmvcfw\Response;
 use app\controllers\AuthController;
-use app\core\exception\NotFoundException;
-use app\core\form\Form;
+use bk\phpmvcfw\exception\NotFoundException;
+use bk\phpmvcfw\form\Form;
 
 /**
  * Class Router
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 
 
@@ -62,7 +62,7 @@ class Router
         if (is_array($callback)) {
             //$callback[0] = new $callback[0]();
             //instance of controller created replaced by this
-            /** @var \app\core\Controller $controller */
+            /** @var \bk\phpmvcfw\Controller $controller */
             $controller = new $callback[0]();
             Application::$app->controller = $controller;
             $controller->action = $callback[1];

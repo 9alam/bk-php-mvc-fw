@@ -5,15 +5,15 @@
  * Time: 8:43 AM
  */
 
-namespace app\core\form;
-use app\core\Model;
+namespace bk\phpmvcfw\form;
+use bk\phpmvcfw\Model;
 
 
 /**
  * Class InputField
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 
 class InputField extends BaseField
@@ -29,7 +29,7 @@ class InputField extends BaseField
     public string $type;
 
     /** 
-     * @param \app\core\Model $model
+     * @param \bk\phpmvcfw\Model $model
      * @param string $attribute
      *
      */

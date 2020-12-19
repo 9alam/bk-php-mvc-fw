@@ -5,14 +5,14 @@
  * Time: 11:43 AM
  */
 
-namespace app\core\exception;
+namespace bk\phpmvcfw\exception;
 
 
 /**
  * Class NotFoundException
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core\exception
+ * @package bk\phpmvcfw\exception
  */
 class NotFoundException extends \Exception
 {

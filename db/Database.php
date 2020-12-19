@@ -5,8 +5,8 @@
  * Time: 8:09 AM
  */
 
-namespace app\core\db;
-use app\core\Application;
+namespace bk\phpmvcfw\db;
+use bk\phpmvcfw\Application;
 
 
 
@@ -14,7 +14,7 @@ use app\core\Application;
  * Class Database
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core\db;
+ * @package bk\phpmvcfw\db;
  */
 class Database
 {

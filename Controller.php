@@ -5,16 +5,16 @@
  * Time: 10:01 AM
  */
 
-namespace app\core;
+namespace bk\phpmvcfw;
 
-use app\core\Application;
-use app\core\middlewares\BaseMiddleware;
+use bk\phpmvcfw\Application;
+use bk\phpmvcfw\middlewares\BaseMiddleware;
 
 /**
  * Class Controller
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 
 
@@ -25,7 +25,7 @@ class Controller
     public string $action = '';
 
     /**
-     * @var \app\core\middleware\BaseMiddleware[]
+     * @var \bk\phpmvcfw\middleware\BaseMiddleware[]
      */
     protected array $middlewares = [];
 
@@ -46,7 +46,7 @@ class Controller
     /**
      * Get the value of middlewares
      *
-     * @return  \app\core\middleware\BaseMiddleware[]
+     * @return  \bk\phpmvcfw\middleware\BaseMiddleware[]
      */ 
     public function getMiddlewares(): array
     {

@@ -5,14 +5,14 @@
  * Time: 11:33 AM
  */
 
-namespace app\core\middlewares;
+namespace bk\phpmvcfw\middlewares;
 
 
 /**
  * Class BaseMiddleware
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 abstract class BaseMiddleware
 {

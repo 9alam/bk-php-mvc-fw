@@ -5,17 +5,17 @@
  * Time: 9:19 AM
  */
 
-namespace app\core\db;
+namespace bk\phpmvcfw\db;
 
-use app\core\Application;
-use app\core\Model;
+use bk\phpmvcfw\Application;
+use bk\phpmvcfw\Model;
 
 
 /**
  * Class DbModel
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 abstract class DbModel extends Model
 {

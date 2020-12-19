@@ -5,16 +5,16 @@
  * Time: 11:35 AM
  */
 
-namespace app\core\exception;
+namespace bk\phpmvcfw\exception;
 
 
-use app\core\Application;
+use bk\phpmvcfw\Application;
 
 /**
  * Class ForbiddenException
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core\exception
+ * @package bk\phpmvcfw\exception
  */
 class ForbiddenException extends \Exception
 {

@@ -5,19 +5,19 @@
  * Time: 9:57 AM
  */
 
-namespace app\core;
+namespace bk\phpmvcfw;
 
 use app\models\LoginForm;
-use app\core\db\DbModel;
-use app\core\db\Database;
-use app\core\UserModel;
+use bk\phpmvcfw\db\DbModel;
+use bk\phpmvcfw\db\Database;
+use bk\phpmvcfw\UserModel;
 
 
 /**
  * Class Application
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core;
+ * @package bk\phpmvcfw;
  */
 
 class Application

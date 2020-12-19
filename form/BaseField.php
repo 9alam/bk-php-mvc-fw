@@ -5,10 +5,10 @@
  * Time: 3:49 PM
  */
 
-namespace app\core\form;
+namespace bk\phpmvcfw\form;
 
 
-use app\core\Model;
+use bk\phpmvcfw\Model;
 
 /**
  * Class BaseField
@@ -26,7 +26,7 @@ abstract class BaseField
     /**
      * Field constructor.
      *
-     * @param \app\core\Model $model
+     * @param \bk\phpmvcfw\Model $model
      * @param string          $attribute
      */
     public function __construct(Model $model, string $attribute)

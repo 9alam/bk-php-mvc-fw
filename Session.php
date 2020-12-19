@@ -5,14 +5,14 @@
  * Time: 11:18 PM
  */
 
-namespace app\core;
+namespace bk\phpmvcfw;
 
 
 /**
  * Class Session
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 
 class Session

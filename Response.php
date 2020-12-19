@@ -5,15 +5,15 @@
  * Time: 10:01 AM
  */
 
-namespace app\core;
-use app\core\Application;
-use app\core\Request;
+namespace bk\phpmvcfw;
+use bk\phpmvcfw\Application;
+use bk\phpmvcfw\Request;
 
 /**
  * Class Router
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 
 

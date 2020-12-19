@@ -5,16 +5,16 @@
  * Time: 8:43 AM
  */
 
-namespace app\core\form;
+namespace bk\phpmvcfw\form;
 
-use app\core\Model;
+use bk\phpmvcfw\Model;
 
 
 /**
  * Class Form
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 
 class Form

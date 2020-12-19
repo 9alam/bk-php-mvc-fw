@@ -5,9 +5,9 @@
  * Time: 10:13 AM
  */
 
-namespace app\core;
+namespace bk\phpmvcfw;
 
-use app\core\db\DbModel;
+use bk\phpmvcfw\db\DbModel;
 
 /**
  * Class UserModel

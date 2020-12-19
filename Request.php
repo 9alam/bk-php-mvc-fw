@@ -5,14 +5,14 @@
  * Time: 10:23 AM
  */
 
-namespace app\core;
+namespace bk\phpmvcfw;
 
 
 /**
  * Class Request
  *
  * @author  Bachir Kadiri <bkadiri@gmail.com>
- * @package app\core
+ * @package bk\phpmvcfw
  */
 class Request
 {
