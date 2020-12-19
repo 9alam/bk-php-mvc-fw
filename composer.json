@@ -6,7 +6,6 @@
             "email": "35188435+9alam@users.noreply.github.com"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "bk\\phpmvcfw\\": "."
