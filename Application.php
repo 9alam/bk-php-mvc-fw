@@ -7,8 +7,6 @@
 
 namespace bk\phpmvcfw;
 
-use app\models\LoginForm;
-use bk\phpmvcfw\db\DbModel;
 use bk\phpmvcfw\db\Database;
 use bk\phpmvcfw\UserModel;
 
@@ -22,6 +20,12 @@ use bk\phpmvcfw\UserModel;
 
 class Application
 {
+
+    const EVENT_BEFORE_REQUEST = 'beforeRequest';
+    const EVENT_AFTER_REQUEST = 'afterRequest';
+
+    protected array $eventListeners = [];
+
     public Request $request;
     public Router $router;
     public static $ROOT_DIR;
@@ -68,6 +72,7 @@ class Application
 
     public function run()
     {
+        $this->triggerEvent(self::EVENT_BEFORE_REQUEST);
         try {
             echo $this->router->resolve();
         } catch (\Exception $e) {
@@ -122,5 +127,18 @@ class Application
     {
         $this->user = null;
         self::$app->session->remove('user');
+    }
+
+    public function on($eventName, $callback)
+    {
+        $this->eventListeners[$eventName][] = $callback;
+    }
+
+    public function triggerEvent($eventName)
+    {
+        $callbacks = $this->eventListeners[$eventName] ?? [];
+        foreach ($callbacks as $callback) {
+            call_user_func($callback);
+        }
     }
 }
